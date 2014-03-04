@@ -1,0 +1,19 @@
+<?php
+ function rollover($name,$link,$alt) {
+   echo '
+     <script type="text/javascript" language="javascript">
+         var ' . $name . '=new Image();' . $name . '.src="/images/' . $name . '.gif";
+         var ' . $name . '_over=new Image();' . $name . '_over.src="/images/' . $name . '_over' . '.gif";
+     </script>
+     <a onmouseover="swap(\'' . $name . '\')" onmouseout="restore(\'' . $name . '\')" href="' . $link . '"><img src="/images/' . $name . '.gif" alt="' . $alt . '" id="' . $name . '" /></a>';
+ }
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+
+<script language="JavaScript" type="text/javascript" src="/javascript/rollovers.js"></script>
+<script language="JavaScript" type="text/javascript" src="/javascript/popups.js"></script>
+
+<link href="/css/about.css" rel="stylesheet" type="text/css" media="all" />
